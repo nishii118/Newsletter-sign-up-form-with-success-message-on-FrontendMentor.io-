@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 100vh; */
+  min-height: 100vh;
+
+  background-color: hsl(235, 18%, 26%);
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  /* width: 100%; */
+}
+
+.cart__left {
+  width: 50%;
+}
+
+.cart__right {
+  width: 50%;
+}
+
+.cart__right img {
+  /* height: 100%; */
+  width: 100%;
+}
+
+.cart__left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.cart__left h1 {
+  font-size: 50px;
+  color: hsl(234, 29%, 20%);
+}
+
+.cart__left p {
+  margin: 20px 0;
+  width: 90%;
+}
+
+.cart__left ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  /* padding: 0 28px; */
+}
+
+.cart__left ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cart__left ul li::before {
+  content: url(./assets/images/icon-list.svg);
+  margin-right: 10px; /* Adjust as needed for spacing between the image and text */
+}
+
+.cart__left form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.cart__left form label {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.submit__label-title {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+.cart__left form input {
+  padding: 20px;
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 10px;
+  border: solid 1px hsl(231, 7%, 60%);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cart__left form input:hover {
+  border: solid 1px black;
+  color: black;
+}
+.cart__left form button {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cart__left form button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.hide {
+  display: none;
+}
+
+.cart-container2 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  width: 500px;
+}
+
+.cart-container2 img {
+  width: 60px;
+}
+
+.cart-container2 h1 {
+  margin: 20px 0;
+  font-size: 60px;
+  line-height: 100%;
+  color: hsl(234, 29%, 20%);
+}
+
+.cart-container2 p {
+  line-height: 150%;
+  color: hsl(235, 18%, 26%);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cart-container2 p span {
+  font-weight: 700;
+}
+
+.cart-container2 button {
+  padding: 20px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cart-container2 button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.hide {
+  display: none;
+}
+@media (max-width: 800px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .cart-container {
+    flex-direction: column-reverse;
+    padding: 0;
+    /* min-height: 100%; */
+  }
+  .cart__left {
+    width: 100%;
+  }
+  .cart__right {
+    width: 100%;
+  }
+  .cart__right img {
+    width: 100%;
+    content: url(./assets/images/illustration-sign-up-mobile.svg);
+  }
+  .cart-container h1 {
+    font-size: 4vh;
+  }
+  .cart__left p {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .cart__left form {
+    width: 100%;
+  }
+}
+
+.invalid-email {
+  border: solid 1px hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+  background-color: hsl(4, 82%, 82%);
+  /* outline: none; */
+}
